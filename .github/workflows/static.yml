@@ -28,5 +28,5 @@ jobs:
       - name: Install static tooling
         run: python -m pip install -r requirements-dev.txt
       - name: Validate, mock-test, lint and scan
-        run: ./scripts/static-checks.sh
+        run: bash scripts/static-checks.sh
 # No credentials, OIDC, terraform apply, or automatic deployment job.

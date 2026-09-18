@@ -67,7 +67,7 @@ Commands run from this repository root on Linux/macOS (or WSL). Install Python 3
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-dev.txt
-./scripts/static-checks.sh                  # no AWS credentials or deployment
+bash scripts/static-checks.sh                  # no AWS credentials or deployment
 
 aws configure sso --profile netlab          # your IAM Identity Center setup
 aws sso login --profile netlab

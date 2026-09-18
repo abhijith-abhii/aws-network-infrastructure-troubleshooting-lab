@@ -30,7 +30,7 @@ A failed safety check is a reason to review the plan, not to delete state or byp
 ```bash
 terraform -chdir=terraform init -upgrade
 terraform -chdir=terraform providers lock -platform=linux_amd64 -platform=darwin_arm64
-./scripts/static-checks.sh
+bash scripts/static-checks.sh
 # Review and commit the changed lock file and validation evidence.
 ```
 

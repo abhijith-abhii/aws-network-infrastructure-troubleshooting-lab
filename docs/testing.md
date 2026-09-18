@@ -2,7 +2,7 @@
 
 ## Offline checks
 
-Run `./scripts/static-checks.sh` after installing `requirements-dev.txt` and Terraform. No AWS credentials are required. Terraform must download its provider on first initialization; “offline” here means no AWS deployment, not necessarily no internet downloads.
+Run `bash scripts/static-checks.sh` after installing `requirements-dev.txt` and Terraform. No AWS credentials are required. Terraform must download its provider on first initialization; “offline” here means no AWS deployment, not necessarily no internet downloads.
 
 - Terraform formatting and provider-schema validation.
 - Twelve Terraform mock runs: compute security and SG fault, endpoint policy and SSM continuity, ACL direction/order, route removal, private DNS removal and rejection of invalid scenarios. Root DNS tests use **mocked apply phases** to resolve resource IDs; no real AWS resources are created. Module tests use mocked plans.
