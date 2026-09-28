@@ -1,0 +1,29 @@
+tests/compute.tftest.hcl... in progress
+  run "baseline"... pass
+  run "sg_fault"... pass
+  run "client"... pass
+tests/compute.tftest.hcl... tearing down
+tests/compute.tftest.hcl... pass
+tests/endpoints.tftest.hcl... in progress
+  run "baseline"... pass
+  run "s3_fault"... pass
+tests/endpoints.tftest.hcl... tearing down
+tests/endpoints.tftest.hcl... pass
+tests/network.tftest.hcl... in progress
+  run "baseline"... pass
+  run "return_fault"... pass
+tests/network.tftest.hcl... tearing down
+tests/network.tftest.hcl... pass
+tests/peering.tftest.hcl... in progress
+  run "baseline"... pass
+  run "routing_fault"... pass
+tests/peering.tftest.hcl... tearing down
+tests/peering.tftest.hcl... pass
+tests/root.tftest.hcl... in progress
+  run "baseline"... pass
+  run "dns_fault"... pass
+  run "invalid_scenario"... pass
+tests/root.tftest.hcl... tearing down
+tests/root.tftest.hcl... pass
+
+Success! 12 passed, 0 failed.

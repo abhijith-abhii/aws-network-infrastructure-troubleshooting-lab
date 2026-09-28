@@ -1,0 +1,10 @@
+{
+  "terraform_test_summary": "Success! 12 passed, 0 failed.",
+  "python_tests": [
+    "----------------------------------------------------------------------",
+    "Ran 16 tests in 0.010s",
+    "",
+    "OK"
+  ],
+  "aws_deployed": false
+}

@@ -1,0 +1,51 @@
+test_account_guard (test_lab.SafetyContracts.test_account_guard) ... ok
+test_aws_denied_is_not_deletion (test_lab.SafetyContracts.test_aws_denied_is_not_deletion) ... ok
+test_bootstrap_template_shell_syntax (test_lab.SafetyContracts.test_bootstrap_template_shell_syntax) ... ok
+test_dns_fault_checks_nxdomain_not_dig_exit_code (test_lab.SafetyContracts.test_dns_fault_checks_nxdomain_not_dig_exit_code) ... ok
+test_healthy_content_required (test_lab.SafetyContracts.test_healthy_content_required) ... ok
+test_network_fault_requires_timeout (test_lab.SafetyContracts.test_network_fault_requires_timeout) ... ok
+test_peering_requires_deleted_status (test_lab.SafetyContracts.test_peering_requires_deleted_status) ... ok
+test_plan_accepts_only_selected_fault (test_lab.SafetyContracts.test_plan_accepts_only_selected_fault) ... ok
+test_plan_rejects_unrelated_drift (test_lab.SafetyContracts.test_plan_rejects_unrelated_drift) ... ok
+test_recognized_notfound_is_deletion (test_lab.SafetyContracts.test_recognized_notfound_is_deletion) ... ok
+test_replacement_is_not_a_fault (test_lab.SafetyContracts.test_replacement_is_not_a_fault) ... ok
+test_requires_explicit_mutation_flag (test_lab.SafetyContracts.test_requires_explicit_mutation_flag) ... ok
+test_running_instance_is_not_deleted (test_lab.SafetyContracts.test_running_instance_is_not_deleted) ... ok
+test_s3_fault_rejects_transport_failure (test_lab.SafetyContracts.test_s3_fault_rejects_transport_failure) ... ok
+test_settings_reject_shell_injection (test_lab.SafetyContracts.test_settings_reject_shell_injection) ... ok
+test_unaffected_server_s3_is_required (test_lab.SafetyContracts.test_unaffected_server_s3_is_required) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.010s
+
+OK
+
+tests/compute.tftest.hcl... in progress
+  run "baseline"... pass
+  run "sg_fault"... pass
+  run "client"... pass
+tests/compute.tftest.hcl... tearing down
+tests/compute.tftest.hcl... pass
+tests/endpoints.tftest.hcl... in progress
+  run "baseline"... pass
+  run "s3_fault"... pass
+tests/endpoints.tftest.hcl... tearing down
+tests/endpoints.tftest.hcl... pass
+tests/network.tftest.hcl... in progress
+  run "baseline"... pass
+  run "return_fault"... pass
+tests/network.tftest.hcl... tearing down
+tests/network.tftest.hcl... pass
+tests/peering.tftest.hcl... in progress
+  run "baseline"... pass
+  run "routing_fault"... pass
+tests/peering.tftest.hcl... tearing down
+tests/peering.tftest.hcl... pass
+tests/root.tftest.hcl... in progress
+  run "baseline"... pass
+  run "dns_fault"... pass
+  run "invalid_scenario"... pass
+tests/root.tftest.hcl... tearing down
+tests/root.tftest.hcl... pass
+
+Success! 12 passed, 0 failed.
